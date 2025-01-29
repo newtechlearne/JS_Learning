@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+    <h1>Heading 3</h1>
+    <script>
+        let h1 = document.getElementsByTagName('h1');
+        
+        for(let item of h1){
+            item.style.cssText = `
+                color : red ;
+                background-color : orange;
+                font-size : 100px;
+            `
+        }
+        for(let item of h1){
+            console.log(item.innerText);
+            console.log(item.textContent);
+            console.log(item.innerHTML);
+        }
+        for(let item of h1){
+            item.innerText = "New Text";
+        }
+    </script>
+</body>
+</html>
