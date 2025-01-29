@@ -11,11 +11,6 @@ let arrApi = [
     'https://api.github.com/users/Samarth0606',
     'https://api.github.com/users/alokiit',
     'https://api.github.com/users/sachin0072',
-]
-let arrApi = [
-    'https://api.github.com/users/Samarth0606',
-    'https://api.github.com/users/alokiit',
-    'https://api.github.com/users/sachin0072',
 ];
 
 for (const item of arrApi){

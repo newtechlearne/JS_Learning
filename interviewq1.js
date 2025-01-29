@@ -27,7 +27,9 @@ p1.then(function(data) { console.log(data) })
   .then(function() { return p2.then(function(data) { console.log(data) }) })
   .then(function() { return p3.then(function(data) { console.log(data) }) })
   .then(function() { return p4.then(function(data) { console.log(data) }) });
- async function main() {
+
+
+  async function main() {
   let p1 = new Promise(function (resolve, reject) {
     let data = "select image";
     setTimeout(function() {
